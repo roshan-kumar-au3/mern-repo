@@ -1,0 +1,23 @@
+#loginPage {
+	display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+	.login-wrapper {
+        .login-left {
+            min-width: 400px;
+
+            .login-input {
+                border: none;
+                outline: none;
+                background-color: rgb(223, 223, 223);
+                padding: 15px 12px;
+                border-radius: 25px;
+                width: 100%;
+                max-width: 400px;
+                font-family: inherit;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
