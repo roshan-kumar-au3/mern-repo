@@ -1,8 +1,8 @@
 const { validationResult } = require("express-validator");
 const { omit, get } = require("lodash");
-const { createSession, createAccessToken, updateSession, findSessions } = require("../service/session.service");
+const { createSession, updateSession, findSessions } = require("../service/session.service");
 const { validatePassword } = require("../service/user.service");
-const { sign } = require("../utils/jwt");
+const { sign, createAccessToken } = require("../utils/jwt");
 
 
 const accessTokenTtl = "60d";
